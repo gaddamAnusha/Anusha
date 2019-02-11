@@ -8,8 +8,8 @@ phases:
   install:
     commands:
       - echo Entered the install phase...
-      - yum update -y
-      - yum install -y maven
+      - apt-get update -y
+      - apt-get install -y maven
     finally:
       - echo This always runs even if the update or install command fails 
   pre_build:
