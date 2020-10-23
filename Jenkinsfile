@@ -19,7 +19,7 @@ pipeline {
             steps {
                 echo 'Deploying....'
                 sh 'java -version'
-                sh 'mvn deploy'
+                sh 'mvn package'
             }
         }
         stage('release') {
